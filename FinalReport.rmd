@@ -168,6 +168,9 @@ fisherXY = function(x, y, confL = 0, printAll=TRUE){
 
 ```
 
+
+The p value is different from the last one so we can run the fisher test if we want.
+
 ```{r}
 fisherXY(mydata$cappun,mydata$race, printAll = TRUE)
 ```
