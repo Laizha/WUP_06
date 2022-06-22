@@ -1,6 +1,6 @@
 ---
 title: "GSS challange"
-author: "Laizha Grajeda De Leon"
+author: "Laizha Grajeda DeLeon"
 date: "6/21/22"
 output: html_document
 ---
