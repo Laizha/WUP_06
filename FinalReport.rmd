@@ -63,7 +63,7 @@ basicCC <- ggplot(dd2,aes(x=race,y=prcnt*100,fill=cappun))
 basicCC + geom_bar(stat="identity", position = "dodge")
 ```
 
-Based on these graphs(both count and percentage), it seems that the white population favors the proposition, while the black population opposes it more than favoring it, and the other population favors it more than opposing it. 
+Based on these graphs(both count and percentage), it seems that the white population favors the proposition, while the black population opposes it more than favoring it, and the other population favors it more than opposing it.  
 
 ### Numerical Descriptive Results
 
@@ -72,7 +72,7 @@ Based on these graphs(both count and percentage), it seems that the white popula
 
 
 
-## Now with More data
+## Now with More data 
 
 ```{r}
 table2 <- xtabs(~race + cappun, data=mydata)
@@ -102,6 +102,11 @@ chisqtestGC(table2)
 fisher.test(table2)
 #fisherXY(mydata$race,mydata$cappun)
 ```
+
+The P value is very low so we run the fisher test.
+
+
+
 
 ```{r}
 fisherXY(mydata$cappun,mydata$race)
